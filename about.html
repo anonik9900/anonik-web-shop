@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--Devolved By Nicholas Impieri Aka Anonik -->
+
+<html>
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <!--Import Google Icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anonik Web $hop </title>
+  </head>
+
+  <body>
+
+    <!--MOBILE DEVICE NAV BAR-->
+
+     <div class="hide-on-large-only">
+
+     <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Anonik Web Shop</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts-html">Contacts</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+</div>
+
+
+<!--DROPDOWN BARRA-->
+<div class="hide-on-med-and-down">
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+  <nav>
+    <div class="nav-wrapper blue accent-2">
+      <a href="" class="brand-logo center">Anonik Web Shop</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      <!--  <li><a href="" class="dropdown-button-disabled" data-activates="dropdown1">Dopdown<i class="material-icons right">arrow_drop_down</i></a></li>-->
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <br><br>
+
+<!--CONTAINER-->
+<div class="container">
+
+  <!-- HORIZONTAL CARDS -->
+      <h2 class="header">ABOUT ME</h2>
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="image/profile.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>Mi chiamo Nicholas Impieri Aka Anonik, ho 16 anni sono nato ad Aosta ma vivo attualmente a Messina in Sicilia.<br>
+            Fin da Piccolo mi hanno sempre appassionato i videogiochi,la musica e l'informatica.
+            Quest'ultima ho capito che sarebbe stata la mia pi&uacute grande passione, ad oggi studio informatica da totale
+             autoditatta.
+            </p>
+            <br>
+            <p><b>Le mie competenze!</b>
+<br>
+            Conosco i seguenti linguaggi di programmazione: <br><ul>
+              <li>Linguaggio C e C++</li>
+              <li>Linguaggio HTML5 e CSS</li>
+              <li>Linguaggio Javascript e un p&oacute di php</li>
+              <li>Qbasic e Python</li>
+            </ul>
+            Ultimamente mi sto dilettando molto con l'html5 e il css 3 creando appunto<br>
+            i template che vedete in vendita su questo sito.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="about-en.html"class="blue-text">English Version</a>
+            <a href="about.html"class="blue-text">Italian Version</a>
+          </div>
+        </div>
+      </div>
+<br>
+<div align="center">
+<a href="https://www.paypal.me/anonik99"><img src="image/donate.png" alt="" width="300" height="100"></a>
+</div>
+
+<div align="center">
+<!-- FLOW TEXT -->
+<p class="flow-text">Copyright &copy 2018 Anonik Web Shop All Rights Reserved</p>
+<p class="flow-text">Designed by <a href="nicholasimpieri.altervista.org">Nicholas Impieri</p></a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="height:200px"></div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            // Init Carousel
+            $('.carousel').carousel();
+
+            // Init Carousel Slider
+            $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+            // Fire off toast
+            //Materialize.toast('Hello World', 3000);
+
+            // Init Slider
+            $('.slider').slider();
+
+            // Init Modal
+            $('.modal').modal();
+
+            // Init Sidenav
+            $('.button-collapse').sideNav();
+          });
+        </script>
+
+        <script language=JavaScript type="text/javascript">
+        <!--
+
+        //Disable right mouse click Script
+
+        var message="Funzione Disabilitata!";
+
+        ///////////////////////////////////
+        function clickIE4(){
+        if (event.button==2){
+        alert(message);
+        return false;
+        }
+        }
+
+        function clickNS4(e){
+        if (document.layers||document.getElementById&&!document.all){
+        if (e.which==2||e.which==3){
+        alert(message);
+        return false;
+        }
+        }
+        }
+
+        if (document.layers){
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown=clickNS4;
+        }
+        else if (document.all&&!document.getElementById){
+        document.onmousedown=clickIE4;
+        }
+
+        document.oncontextmenu=new Function("alert(message);return false")
+
+        // -->
+        </script>
+
+  </body>
+  </html>

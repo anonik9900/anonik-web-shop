@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <!--Import Google Icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anonik Web $hop </title>
+  </head>
+
+  <body>
+
+    <!--MOBILE DEVICE NAV BAR-->
+
+     <div class="hide-on-large-only">
+
+     <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Anonik Web Shop</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts-html">Contacts</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!--DROPDOWN BARRA-->
+    <div class="hide-on-med-and-down">
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+    <div class="nav-wrapper blue accent-2">
+      <a href="" class="brand-logo center">Anonik Web Shop</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      <!--  <li><a href="" class="dropdown-button-disabled" data-activates="dropdown1">Dopdown<i class="material-icons right">arrow_drop_down</i></a></li>-->
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+    </nav>
+    </div>
+    <br><br>
+
+
+
+  <h1>Contattami</h1>
+  <br>
+  <!-- FLOW TEXT TESTO RESPONSIVE -->
+<p class="flow-text">Utilizza il form sottostante per contattarmi.</p>
+
+<br>
+
+       <!-- FORMS -->
+       <form>
+         <div class="input-field">
+           <input type="text" id="name">
+           <label class="active" for="name">Nome</label>
+         </div>
+         <div class="input-field">
+           <input type="email" id="email" class="validate">
+           <label class="active" for="email">Email</label>
+         </div>
+         <div class="input-field">
+           <textarea type="email" id="textarea" class="materialize-textarea"></textarea>
+           <label class="active" for="textarea">Messaggio</label>
+         </div>
+       </form>
+
+<!--CONTAINER-->
+<div class="container">
+  <div align="left">
+  <button class="btn waves-effect waves-light green"><a href="mailto:impieri.nicholas@gmail.com">Invia</a></button>
+  </div>
+</div>
+<!--./CONTAINER-->
+
+<br>
+
+<div align="center">
+  <img src="image/logo.png"right-align>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.8781399785275!2d15.541548115813935!3d38.21272577968197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13144dcc84f544f3%3A0x14510fd6b07856ac!2sViale+Giostra%2C+Messina+ME!5e0!3m2!1sit!2sit!4v1520526898839" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+  <div style="height:10px"></div>
+
+
+       <!--Import jQuery before materialize.js-->
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+       <script language=JavaScript type="text/javascript">
+       <!--
+
+       //Disable right mouse click Script
+
+       var message="Funzione Disabilitata!";
+
+       ///////////////////////////////////
+       function clickIE4(){
+       if (event.button==2){
+       alert(message);
+       return false;
+       }
+       }
+
+       function clickNS4(e){
+       if (document.layers||document.getElementById&&!document.all){
+       if (e.which==2||e.which==3){
+       alert(message);
+       return false;
+       }
+       }
+       }
+
+       if (document.layers){
+       document.captureEvents(Event.MOUSEDOWN);
+       document.onmousedown=clickNS4;
+       }
+       else if (document.all&&!document.getElementById){
+       document.onmousedown=clickIE4;
+       }
+
+       document.oncontextmenu=new Function("alert(message);return false")
+
+       // -->
+       </script>
+
+     </body>
+     </html>
